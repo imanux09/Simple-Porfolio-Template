@@ -1,0 +1,50 @@
+.imgPerson {
+  border-radius: 20px;
+  width: 380px;
+  height: 380px;
+}
+.aboutMeInfo {
+  color: white;
+  font-family: "M PLUS 1 Code";
+  font-weight: bold;
+}
+.about {
+  padding-top: 40px;
+}
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.imgBoxDecoration {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 4px solid #4a4a14;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 20px;
+}
+.imgBox {
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1050px) {
+  .imgPerson {
+    margin-left: 0px !important;
+    padding: 10px;
+  }
+  .imgBox {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .content {
+    justify-content: center;
+    flex-direction: row;
+  }
+}

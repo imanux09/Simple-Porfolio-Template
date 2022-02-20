@@ -1,0 +1,82 @@
+.frist {
+  background-color: #4a4a14;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-size: 100px;
+  margin: 0 !important;
+  color: #ececec;
+}
+.subtitle {
+  font-size: 40px;
+
+  color: #ced2a9;
+  margin: 0px;
+}
+.mainInfo {
+  margin: 40px;
+}
+.welcomeMsg {
+  font-size: 20px;
+  font-family: "M PLUS 1 Code";
+  color: #ced2a9;
+  margin-bottom: 20px;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.rows {
+  fill: #ececec;
+  width: 5rem;
+  height: 4rem;
+}
+.moreInfoButton {
+  cursor: pointer;
+  border: 0px;
+  padding: 20px;
+  background-color: #88923f00;
+  border-radius: 20px;
+  color: #ececec;
+  font-weight: bold;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 50px !important;
+    margin: 0 !important;
+    color: #ececec;
+    text-align: justify;
+  }
+  .subtitle {
+    font-size: 20px;
+    color: #ced2a9;
+    margin: 0px;
+    text-align: justify;
+  }
+  .welcomeMsg {
+    font-size: 15px;
+    font-family: "M PLUS 1 Code";
+    color: #ced2a9;
+    margin-bottom: 20px;
+  }
+}

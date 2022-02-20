@@ -1,0 +1,19 @@
+.subtitleContact {
+  font-size: 20px;
+  font-family: "M PLUS 1 Code";
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--green);
+  padding: 10px;
+}
+
+.contact {
+  padding-top: 40px;
+}
+
+.buttonContactGroup {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 20px;
+}

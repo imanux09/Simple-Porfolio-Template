@@ -1,0 +1,52 @@
+.projects {
+  padding-top: 40px;
+}
+
+.imgprojects {
+  left: -100px;
+  position: relative;
+  max-height: 350px;
+  border-radius: 20px;
+}
+
+.tools {
+  display: flex;
+  gap: 30px;
+  color: white;
+  font-family: "M PLUS 1 Code";
+  padding: 0px !important;
+}
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.buttonGroup {
+  padding: 10px;
+}
+.margin {
+  margin-top: 20px;
+}
+@media (max-width: 1050px) {
+  .imgprojects {
+    left: 0px;
+    padding: 1%;
+    width: 100%;
+  }
+  .imgBoxprojects {
+    height: 150px;
+  }
+  .buttonGroup {
+    display: flex;
+    justify-content: center;
+  }
+  .tools {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1050px) {
+  .content {
+    justify-content: center;
+    flex-direction: row;
+  }
+}

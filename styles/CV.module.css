@@ -1,0 +1,17 @@
+.subtitleCV {
+  font-size: 20px;
+  font-family: "M PLUS 1 Code";
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--green);
+  padding: 10px;
+}
+
+.cv {
+  padding-top: 40px;
+}
+
+.downloadButtonDiv {
+  display: flex;
+  justify-content: center;
+}
