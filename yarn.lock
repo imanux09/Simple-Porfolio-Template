@@ -188,6 +188,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/spartan@^4.5.4":
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/@fontsource/spartan/-/spartan-4.5.4.tgz#10c3a79ceb997578a32fa1aed657420c9b047589"
+  integrity sha512-qZwaH1vAaod26F7siGvJIWMoE2uGbmN0P55xj8IHAYfe3Q5FFWjkafTNc/iZOHrSDzfreof91U9pZ8N6NiTdXg==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.3"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.9.3.tgz"

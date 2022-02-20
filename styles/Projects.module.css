@@ -13,16 +13,14 @@
   display: flex;
   gap: 30px;
   color: white;
-  font-family: "M PLUS 1 Code";
+  font-family: "MPLUS1";
   padding: 0px !important;
 }
 .content {
   display: flex;
   flex-direction: column-reverse;
 }
-.buttonGroup {
-  padding: 10px;
-}
+
 .margin {
   margin-top: 20px;
 }

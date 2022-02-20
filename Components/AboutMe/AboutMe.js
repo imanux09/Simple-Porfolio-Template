@@ -29,9 +29,7 @@ export default function AboutMe(props) {
               <h1 className="titleBox">{data.nameAbout}</h1>
             </div>
             <h3 className="subtitleBox">{data.subtitleAbout}</h3>
-            <p className={style.aboutMeInfo}>
-              {data.description.replace("\n", "\\n")}
-            </p>
+            <p className={style.aboutMeInfo}>{data.description}</p>
           </div>
         </div>
         <div className={style.imgBox}>

@@ -44,49 +44,53 @@ export default function Projects(props) {
                     return <li key={j}>{tools.attributes.name}</li>;
                   })}
                 </ul>
-              </div>
-              <div className={style.buttonGroup}>
-                {project.attributes.demo ? (
-                  <Tooltip title="Demo">
-                    <IconButton
-                      onClick={() => {
-                        window.open(project.attributes.demo, "_blank").focus();
-                      }}
-                    >
-                      <SlideshowIcon style={{ color: "white" }}></SlideshowIcon>
-                    </IconButton>
-                  </Tooltip>
-                ) : (
-                  <></>
-                )}
-                {project.attributes.documentation ? (
-                  <Tooltip title="Documentación">
-                    <IconButton
-                      onClick={() => {
-                        window
-                          .open(project.attributes.documentation, "_blank")
-                          .focus();
-                      }}
-                    >
-                      <ImportContactsIcon
-                        style={{ color: "white" }}
-                      ></ImportContactsIcon>
-                    </IconButton>
-                  </Tooltip>
-                ) : (
-                  <></>
-                )}
-                {project.attributes.github ? (
-                  <Tooltip title="GitHub">
-                    <IconButton>
-                      <ImportContactsIcon
-                        style={{ color: "white" }}
-                      ></ImportContactsIcon>
-                    </IconButton>
-                  </Tooltip>
-                ) : (
-                  <></>
-                )}
+                <div className={style.buttonGroup}>
+                  {project.attributes.demo ? (
+                    <Tooltip title="Demo">
+                      <IconButton
+                        onClick={() => {
+                          window
+                            .open(project.attributes.demo, "_blank")
+                            .focus();
+                        }}
+                      >
+                        <SlideshowIcon
+                          style={{ color: "white" }}
+                        ></SlideshowIcon>
+                      </IconButton>
+                    </Tooltip>
+                  ) : (
+                    <></>
+                  )}
+                  {project.attributes.documentation ? (
+                    <Tooltip title="Documentación">
+                      <IconButton
+                        onClick={() => {
+                          window
+                            .open(project.attributes.documentation, "_blank")
+                            .focus();
+                        }}
+                      >
+                        <ImportContactsIcon
+                          style={{ color: "white" }}
+                        ></ImportContactsIcon>
+                      </IconButton>
+                    </Tooltip>
+                  ) : (
+                    <></>
+                  )}
+                  {project.attributes.github ? (
+                    <Tooltip title="GitHub">
+                      <IconButton>
+                        <ImportContactsIcon
+                          style={{ color: "white" }}
+                        ></ImportContactsIcon>
+                      </IconButton>
+                    </Tooltip>
+                  ) : (
+                    <></>
+                  )}
+                </div>
               </div>
             </div>
 
