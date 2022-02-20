@@ -1,11 +1,20 @@
+@import url("http://fonts.cdnfonts.com/css/league-spartan");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "League Spartan", "M PLUS 1 Code", -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #ececec;
 }
-
+:root {
+  --green: #4a4a14;
+  --white: #ececec;
+  --light-green: #ced2a9;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +22,130 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.box {
+  background-color: #4a4a14;
+  width: 100%;
+  z-index: 1;
+  border-radius: 20px;
+  max-width: 600px;
+  align-self: center;
+}
+
+.titleSection {
+  font-size: 40px;
+  text-align: center;
+  color: #4a4a14;
+}
+.titleSection span {
+  background-color: #ececec;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.titleBox {
+  font-size: 30px;
+  color: #ececec;
+}
+
+.fadeIn {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+.subtitleBox {
+  font-size: 20px;
+  font-family: "M PLUS 1 Code";
+  color: #ced2a9;
+  margin-bottom: 20px;
+}
+
+.boxInfo {
+  padding: 20px;
+}
+
+li::marker {
+  content: "";
+}
+h1.line:before {
+  border-top: 4px solid #4a4a14;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+h1.line {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+p {
+  white-space: pre-line;
+  text-align: justify !important;
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1050px) {
+  .box {
+    width: 95%;
+  }
+  .titleBox {
+    text-align: center;
+  }
+  .subtitleBox {
+    text-align: center;
+  }
 }
