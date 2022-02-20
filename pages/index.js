@@ -41,7 +41,7 @@ export default function Home(props) {
     </div>
   );
 }
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const response = await axios.post(process.env.NEXT_PUBLIC_API_GRAPHQL, {
     query: `     query{
       porfolio(locale: "${context.locale}"){
